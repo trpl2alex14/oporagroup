@@ -1,0 +1,34 @@
+//main: style.scss
+//-------------------------------------------------------//
+$color-blue:                        #05628a;//синий
+$color-orange:                      #e67e21;//оранжевый
+$color-grey:                        #ccc;//серый
+$color-red:                         #c9002f;//красный
+$color-grey-light:                  #e2e2e2;//светло-серый
+$color-placeholder:                 #5d5d5d;
+
+
+//-------------------------------------------------------//
+
+
+$bg-base:                           #0c7cad;
+$text-color-base:                   #5d5d5d;
+$font-size-base:                    14px;
+$line-height-base:                  normal;
+
+$font-family-base:                  MyriadProRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-regular:               MyriadProRegular;
+
+$link-color:                        $color-blue;
+$link-hover-color:                  darken($color-blue, 15%);
+$link-decoration:                   none;
+$link-hover-decoration:             none;
+
+$font-path:                         "../fonts/";
+$font-name-regular:                 "MyriadPro_Regular/MYRIADPROREGULAR";
+$font-name-bold:                    "MyriadPro_Semibold/MyriadProSemibold";
+$font-name-bold-condensed:          "MyriadPro_Bold_Condensed/MyriadProBoldCondensed";
+
+$img-path:                          "../img/";
+
+$border-radius-base:                4px;
