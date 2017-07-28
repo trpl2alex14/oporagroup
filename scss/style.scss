@@ -1,3 +1,74 @@
 // sourceMap: true, compileCompressed: ../css/style.min.css
 
 @import "variables";
+
+body{
+  background: $color-white;
+  &:before{
+    content: '';
+    display: block;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: $color-dark;
+  }
+}
+
+.wrapper{
+  background: $color-white;
+  position: relative;
+  z-index: 10;
+}
+
+.leftbox{
+  background: $color-dark;
+  color: $color-white;
+}
+
+.sliderBg{
+  position: absolute;
+  display: block;
+  z-index: -2;
+  top: 80px;
+  height: 500px;
+  left: 0;
+  width: 100%;
+  background: $color-grey;
+}
+
+.menu{
+  height: 500px;
+}
+
+.header{
+  min-height: 80px;
+}
+
+.sliderContent{
+  height: 500px;
+}
+
+
+.actionbox{
+  background: $color-blue;
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: $color-red;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+footer{
+  padding: 50px 0;
+  background: $color-dblue;
+  color: $color-white;
+}
