@@ -1,30 +1,59 @@
 //main: style.scss
 @font-face {
-    font-family: 'MyriadProRegular';
-    src: url('#{$font-path}#{$font-name-regular}.eot');
-    src: url('#{$font-path}#{$font-name-regular}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}#{$font-name-regular}.woff') format('woff'),
-    url('#{$font-path}#{$font-name-regular}.ttf') format('truetype');
-    font-weight: normal;
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-Regular.ttf") format("truetype");
     font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'MyriadProBold';
-    src: url('#{$font-path}#{$font-name-bold}.eot');
-    src: url('#{$font-path}#{$font-name-bold}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}#{$font-name-bold}.woff') format('woff'),
-    url('#{$font-path}#{$font-name-bold}.ttf') format('truetype');
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-Italic.ttf") format("truetype");
+    font-style: italic;
     font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyriadProBoldCondensed';
-    src: url('#{$font-path}#{$font-name-bold-condensed}.eot');
-    src: url('#{$font-path}#{$font-name-bold-condensed}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}#{$font-name-bold-condensed}.woff') format('woff'),
-    url('#{$font-path}#{$font-name-bold-condensed}.ttf') format('truetype');
-    font-weight: normal;
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-Bold.ttf") format("truetype");
     font-style: normal;
+    font-weight: bold;
 }
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PT_Sans";
+    src: url("../fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT_Sans";
+    src: url("../fonts/PT_Sans/PT_Sans-Web-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT_Sans";
+    src: url("../fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PT_Sans";
+    src: url("../fonts/PT_Sans/PT_Sans-Web-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+$font-text: "PT_Sans";
+$font-title: "Cuprum";

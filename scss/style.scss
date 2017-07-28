@@ -1,21 +1,10 @@
 // sourceMap: true, compileCompressed: ../css/style.min.css
 
+@import "mixins";
 @import "variables";
-
-body{
-  background: $color-white;
-  &:before{
-    content: '';
-    display: block;
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background: $color-dark;
-  }
-}
+@import "fonts";
+@import "default";
+@import "media";
 
 .wrapper{
   background: $color-white;
@@ -24,31 +13,30 @@ body{
 }
 
 .leftbox{
-  background: $color-dark;
+  @include center-gradient($color-dark,90deg);
   color: $color-white;
 }
 
 .sliderBg{
   position: absolute;
-  display: block;
+  display: none;
   z-index: -2;
   top: 80px;
-  height: 500px;
+  height: 570px;
   left: 0;
   width: 100%;
-  background: $color-grey;
-}
-
-.menu{
-  height: 500px;
+  background: url('/images/slide_bgr.jpg');
+  background-size: cover;
 }
 
 .header{
-  min-height: 80px;
+  height: 80px;
 }
 
-.sliderContent{
-  height: 500px;
+.services{
+  .item{
+    background: $color-white;
+  }
 }
 
 
@@ -67,8 +55,96 @@ body{
   }
 }
 
-footer{
-  padding: 50px 0;
-  background: $color-dblue;
-  color: $color-white;
+
+// -----------------------------------------------
+
+header {
+  .header.wrapper{
+    background: #fff;
+  }
+
+  .logo{
+    width: 200px;
+    height: 130px;
+    margin: 20px auto;
+    img{
+      width: 100%;
+    }
+  }
+
+  .address{
+    margin: 15px 0 0;
+    font-family: $font-title;
+    font-size: 1.125em;
+    font-weight: bold;
+    a{
+      font-size: 0.777em;
+    }
+  }
+  .phone{
+    text-align: right;
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: (44px / $font-size-base) * 1em;
+    margin: 10px 0 0px;
+  }
+  .email{
+    text-align: right;
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: (18px / $font-size-base) * 1em;
+  }
+
+  .sliderContent{
+    height: 570px;
+    img{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      z-index: 1;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      @include gradient(#fff, rgba(255,255,255,0),horizontal);
+    }
+  }
+
+  .titlebox{
+    margin: 120px 0 0;
+    z-index: 3;
+    position: relative;
+    .company{
+      font-family: $font-title;
+      font-weight: bold;
+      font-size: (40px / $font-size-base) * 1em;
+    }
+    h1{
+      margin: 20px 0 40px;
+      font-weight: bold;
+      color: $color-red;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 7px rgba(208, 117, 91, 0.4);
+    }
+    .slogan{
+      margin: 0 0 40px;
+      font-size: (40px / $font-size-base) * 1em;
+      line-height: 0.8em;
+    }
+    button{
+      padding: 6px 30px 12px;
+      color: $color-red;
+      background: none;
+      border: 2px solid $color-red;
+      font-size: (30px / $font-size-base) * 1em;
+      &:hover{
+        background:  $color-red;;
+        color: #fff;
+      }
+    }
+  }
 }
