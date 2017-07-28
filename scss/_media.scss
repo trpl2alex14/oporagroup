@@ -1,0 +1,14 @@
+//main: style.scss
+
+@media (min-width: 992px) {
+  .sliderBg{
+    display: block !important;
+  }
+  .services{
+    .item{
+      &:nth-child(1), &:nth-child(5){
+        background: none;
+      }
+    }
+  }
+}

@@ -1,6 +1,9 @@
 // sourceMap: true, compileCompressed: ../css/style.min.css
 
 @import "variables";
+@import "mixins";
+@import "media";
+
 
 body{
   background: $color-white;
@@ -24,13 +27,14 @@ body{
 }
 
 .leftbox{
-  background: $color-dark;
+  // background: $color-dark;
+  @include center-gradient($color-dark,90deg);
   color: $color-white;
 }
 
 .sliderBg{
   position: absolute;
-  display: block;
+  display: none;
   z-index: -2;
   top: 80px;
   height: 500px;
@@ -40,7 +44,7 @@ body{
 }
 
 .menu{
-  height: 500px;
+
 }
 
 .header{
@@ -49,6 +53,12 @@ body{
 
 .sliderContent{
   height: 500px;
+}
+
+.services{
+  .item{
+    background: $color-white;
+  }
 }
 
 
