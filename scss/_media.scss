@@ -4,6 +4,9 @@
   .sliderBg{
     display: block !important;
   }
+  .breadcrumbBg{
+    display: block !important;
+  }
 }
 
 
@@ -132,6 +135,7 @@
     }
   }
   footer{
+    background-image: none;
     .contact, .adress{
       text-align: center;
     }

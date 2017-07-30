@@ -49,6 +49,21 @@ body{
     background: $color-dark;
   }
 }
+header {
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -3;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+  }
+}
 
 footer{
   padding: 30px 0 0;

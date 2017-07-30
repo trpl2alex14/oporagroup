@@ -1,20 +1,5 @@
 //main: style.scss
-
 header {
-  position: relative;
-  overflow: hidden;
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: -3;
-    left: 50%;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background: #fff;
-  }
-
 
   .header.wrapper{
     background: #fff;
@@ -69,6 +54,35 @@ header {
       width: 100%;
       z-index: 2;
       @include gradient(#fff, rgba(255,255,255,0),horizontal);
+    }
+  }
+
+  .breadcrumbContent{
+    height: 120px;
+    img{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      z-index: 1;
+    }
+    .breadcrumb{
+      margin: 12px 0 0;
+      z-index: 1000;
+      position: relative;
+      background: none;
+      text-align: right;
+      li+li:before {
+        color: $color-dark;
+      }
+    }
+    h1{
+      position: relative;
+      z-index: 1000;
+      text-align: right;
+      font-size: (36px / $font-size-base) * 1em;
+      margin: 0;
+      padding: 0 15px;
+      font-weight: bold;
     }
   }
 
