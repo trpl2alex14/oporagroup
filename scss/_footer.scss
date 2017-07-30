@@ -1,0 +1,49 @@
+//main: style.scss
+
+footer{
+  color:#fff;
+  .contact, .adress{
+    margin: 15px 0;
+    font-size: (30px / $font-size-base) * 1em;
+    span{
+      display: block;
+      font-size: 0.6em;
+      color: $color-white;
+    }
+  }
+  .adress{
+    font-size: (24px / $font-size-base) * 1em;
+    span{
+      font-size: 0.67em;
+    }
+  }
+  a{
+    font-size: (24px / $font-size-base) * 1em;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+    &:hover{
+      color: $color-red;
+    }
+  }
+}
+
+.subfooter{
+    display: block;
+    width: 100%;
+    //height: 50px;
+    color: $color-white;
+    background: $color-blue;
+    margin-top: 0;
+    .copyright{
+      line-height: 50px;
+    }
+    .rekv{
+      line-height: 20px;
+      margin: 5px 0;
+    }
+    img{
+      height: 40px;
+      margin: 5px 0;
+    }
+}

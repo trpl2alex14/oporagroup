@@ -1,0 +1,35 @@
+//main: style.scss
+
+.faq{
+    .panel {
+        border-radius: 0;
+        margin-bottom: 20px;
+        box-shadow: none;
+        background: $color-white;
+        .panel-title{
+          a{
+            color: $color-red;
+            font-size: (30px / $font-size-base) * 1em;
+            font-family: $font-title;
+            border-bottom: 1px dotted ;
+            &:focus, &:active {
+              text-decoration: none;
+            }
+          }
+        }
+        .panel-body{
+          background: #fff;
+          border: none !important;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+          p{
+            font-size: (18px / $font-size-base) * 1em;
+          }
+        }
+    }
+
+    .send{
+      margin: 50px auto;
+      display: block;
+    }
+
+}

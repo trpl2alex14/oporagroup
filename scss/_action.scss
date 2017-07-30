@@ -1,0 +1,37 @@
+//main: style.scss
+
+.actionbox{
+  overflow: hidden;
+  .action{
+    padding: 25px 5px;
+    .title{
+      font-family: $font-title;
+      font-size:  (30px / $font-size-base) * 1em;
+      font-weight: bold;
+      color: $color-white;
+    }
+    p{
+      font-size:  (18px / $font-size-base) * 1em;
+      color: $color-white;
+      margin: 30px 0 0 0;
+    }
+    .imgbox{
+      display: block;
+      text-align: center;
+      height: 130px;
+      img{
+        height: 100%;
+        max-width: 100%;
+        opacity: 0.5;
+      }
+    }
+    &:hover{
+      .title, p{
+        color: #fff;
+      }
+      img{
+        opacity: 1;
+      }
+    }
+  }
+}

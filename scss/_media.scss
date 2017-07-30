@@ -4,11 +4,195 @@
   .sliderBg{
     display: block !important;
   }
-  .services{
-    .item{
-      &:nth-child(1), &:nth-child(5){
-        background: none;
+}
+
+
+@media (min-width: 768px)and(max-width: 991px) {
+  header .menu nav .navbar-collapse {
+      padding: 5px;
+      width: 300px;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid $color-white;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    position: absolute;
+    z-index: 1000;
+    background: $color-dark;
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
+}
+
+@media (max-width: 1201px) {
+  body{
+    font-size: 14px;
+  }
+  .panel-title{
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  header{
+    .menu{
+      margin: 20px 0;
+      .navbar-toggle{
+        margin: 0;
       }
     }
+    .logoMobile{
+      img {
+        max-width: 100%;
+      }
+    }
+    .address {
+        margin: 20px 0 0;
+        font-size: 1em;
+    }
+    .phone {
+        font-size: 2.5em;
+        margin: 15px 0 0px;
+    }
+  }
+  .services{
+    padding: 0;
+    margin-top: -180px;
+  }
+  .content {
+    h2 {
+      position: relative;
+      left: 15px;
+      color: $color-dark
+    }
+    p:nth-child(2) {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body{
+    &:before{
+      background: $color-white;
+    }
+  }
+  header{
+    .menu{
+      margin: 5px 0;
+      .navbar{
+        margin: 0;
+        min-height: auto;
+      }
+    }
+    .header{
+      min-height: 70px;
+      max-height: 140px;
+      height: auto;
+    }
+     .logoMobile{
+       margin: 40px 0;
+     }
+    .address {
+        margin: 5px 0;
+        font-size: 1em;
+        text-align: right;
+    }
+    .phone {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+  }
+  .command{
+    &:before{
+      height: 800px !important;
+    }
+  }
+  footer{
+    .contact, .adress{
+      text-align: center;
+    }
+  }
+  .subfooter{
+    .text-right{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  body {
+      font-size: 13px;
+  }
+  .panel-title{
+      font-size: 13px;
+  }
+  .actionbox{
+    .docs{
+      width: 100%;
+      background: $color-red;
+    }
+    .call{
+      width: 100%;
+      background: $color-blue;
+    }
+  }
+
+  .content{
+    .wrapp{
+      padding-top: 30px;
+    }
+    p img{
+      width: 40%;
+    }
+  }
+
+  .aboutwrapper{
+    .mediasmoll{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .faq .send {
+      margin: 20px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+      font-size: 10px;
+  }
+  header .header {
+      min-height: 40px;
+      max-height: 80px;
+  }
+  header .logoMobile {
+      margin: 15px 0;
+  }
+  .panel-title{
+      font-size: 10px;
   }
 }
