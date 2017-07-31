@@ -95,76 +95,40 @@
             <img src="/images/breadcrumb.jpg" alt="">
             <ol class="breadcrumb">
               <li><a href="#">Главная</a></li>
-              <li class="active">Контакты</li>
+              <li class="active">Публикации</li>
             </ol>
-            <h1>Наши контакты</h1>
+            <h1>Публикации</h1>
           </div>
-          <div class="col-xs-12 col-sm-11 col-sm-offset-1 col-md-offset-0 col-md-9 wrapper maps">
-            <div class="mapsbox">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AM01Ivtg9YWC1Q2Sojn2pP5WZLUDswVDh&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div>
-            <script type="text/javascript">
-              $( document ).ready(function() {
-                var setMap = function(){$('.mapsbox').width( $('.maps').width() + ($( document ).width() - $('.container').width())/2 +15);};
-                $( window ).resize(function(){setMap();});
-                setMap();
-              });
-            </script>
-            <div class="row contacts">
-              <div class="col-sm-6 text-right">
-                <div class="contact"><span>телефон</span>8 906 272 09 53</div>
-              </div>
-              <div class="col-sm-6">
-                <div class="contact"><span>электронная почта</span>oporagrupp@bk.ru</div>
-              </div>
-              <div class="col-sm-6 text-right">
-                <div class="contact"><span>наш адрес</span>г. Санкт-Петербург, пр. Елизарова,<br>д. 38, лит. «И», помещение 10</div>
-              </div>
-              <div class="col-sm-6">
-                <div class="contact"><span>рабочее время</span>с 09.00 – 18.00<br>Прием звонков круглосуточно</div>
+          <div class="col-xs-12 col-sm-11 col-sm-offset-1 col-md-offset-0 col-md-9 wrapper content">
+            <p></p>
+            <div class="filtr"><a href="#">Наши публикации</a>|<a href="#">Новости</a>|<a href="#">Все</a></div>
+            <div class="newsblock row">
+              <div class="col-md-4 col-sm-3 col-xs-12 imgbox"><img src="/images/new1.jpg" alt=""></div>
+              <div class="col-md-8 col-sm-9 col-xs-12 no-padding textbox">
+                <a href="#"><div class="title"><span>05.12.2017</span>Планируют уточнить в ГК РФ, когда сохраняются ограничительные меры по распоряжению банковским счетом</div></a>
+                <div class="info">
+                  <p>Согласно проекту из-за расторжения договора банковского счета нельзя отменить следующие ограничительные меры: <br>- арест денег на счете; <br>- приостановление операций по нему. <br>Ограничения продолжат применяться к остатку средств на счете. </p>
+                  <a href="#">прочитать полностью...</a>
+                </div>
               </div>
             </div>
+            <div class="newsblock row">
+              <div class="col-md-4 col-sm-3 col-xs-12 imgbox"><img src="/images/new2.jpg" alt=""></div>
+              <div class="col-md-8 col-sm-9 col-xs-12 no-padding textbox">
+                <a href="#"><div class="title"><span>05.12.2017</span>Планируют уточнить в ГК РФ, когда сохраняются ограничительные меры по распоряжению банковским счетом</div></a>
+                <div class="info">
+                  <p>Такую позицию обозначил АС Северо-Западного округа. Она применима, если стороны согласовали условие об ограничении доступа арендатора к помещению за просрочку внесения любых платежей по договору. Примечательно, что в прошлом году ВС РФ в отказном определении высказывал подобное мнение. </p>
+                  <a href="#">прочитать полностью...</a>
+                </div>
+              </div>
+            </div>
+            <p class="filtr text-center"><span>1</span>|<a href="#">2</a>|<a href="#">Далее</a></p>
           </div>
         </div>
       </div>
   </header>
 
-  <div class="container content">
-      <div class="row">
-        <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-9 col-md-offset-3 wrapp">
-          <h2>Написать нам</h2>
-          <p><br></p>
-          <div class="row">
-            <form action="" class="pageForm">
-              <div class="col-sm-5">
-                <div class="form-group">
-                    <label for="inputName">Ваше имя</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Иван Петрович">
-                </div>
-                <div class="form-group">
-                    <label for="inputPhone">Номер телефона</label>
-                    <input type="text" class="form-control" id="inputPhone" placeholder="896300112233">
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail">Электронная почта</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="info@yandex.ru">
-                </div>
-              </div>
-              <div class="col-sm-7">
-                <div class="form-group">
-                    <label for="inputInfo">Чем мы можем вам помочь</label>
-                    <textarea id="inputInfo" class="form-control" placeholder="Сообщение"></textarea>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-md-5 col-sm-6">
-                <button type="submit" class="send">Отправить сообщение</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-  </div>
+
 
   <!-- footer -->
   <footer>
