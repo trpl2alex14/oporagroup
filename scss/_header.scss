@@ -1,0 +1,173 @@
+//main: style.scss
+header {
+
+  .header.wrapper{
+    background: #fff;
+  }
+
+  .logo{
+    width: 200px;
+    height: 90px;
+    margin: 20px auto;
+    text-align: center;
+    img{
+      width: 70%;
+    }
+  }
+
+  .address{
+    margin: 15px 0 0;
+    font-family: $font-title;
+    font-size: 1.125em;
+    font-weight: bold;
+    a{
+      font-size: 0.777em;
+    }
+  }
+  .phone{
+    text-align: right;
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: (44px / $font-size-base) * 1em;
+    margin: 10px 0 0px;
+  }
+  .email{
+    text-align: right;
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: (18px / $font-size-base) * 1em;
+  }
+
+  .sliderContent{
+    height: 570px;
+    img{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      z-index: 1;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      @include gradient(#fff, rgba(255,255,255,0),horizontal);
+    }
+  }
+
+  .breadcrumbContent{
+    height: 120px;
+    img{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      z-index: 1;
+    }
+    .breadcrumb{
+      margin: 12px 0 0;
+      z-index: 1000;
+      position: relative;
+      background: none;
+      text-align: right;
+      li+li:before {
+        color: $color-dark;
+      }
+    }
+    h1{
+      position: relative;
+      z-index: 1000;
+      text-align: right;
+      font-size: (36px / $font-size-base) * 1em;
+      margin: 0;
+      padding: 0 15px;
+      font-weight: bold;
+    }
+  }
+
+  .titlebox{
+    margin: 120px 0 0;
+    z-index: 3;
+    position: relative;
+    .company{
+      font-family: $font-title;
+      font-weight: bold;
+      font-size: (40px / $font-size-base) * 1em;
+    }
+    h1{
+      margin: 5px 0 30px;
+      font-weight: bold;
+      color: $color-red;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 7px rgba(208, 117, 91, 0.4);
+    }
+    .slogan{
+      margin: 0 0 10px;
+      font-size: (24px / $font-size-base) * 1em;
+      line-height: 1em;
+      opacity: 0.6;
+    }
+    button{
+      padding: 7px 30px 12px;
+      color: $color-red;
+      background: none;
+      border: 2px solid $color-red;
+      font-size: (20px / $font-size-base) * 1em;
+      &:hover{
+        background:  $color-red;;
+        color: #fff;
+      }
+    }
+  }
+
+  .menu{
+    margin: 45px 0 10px;
+    nav{
+      .navbar-header{
+        .navbar-toggle{
+          float: left;
+        }
+        button{
+          border: 1px solid $color-white;
+        }
+        .icon-bar{
+          background: $color-white;
+        }
+      }
+      .navbar-collapse{
+        padding: 0;
+      }
+      li{
+        a{
+          padding: 5px 0;
+          color:$color-white;
+          font-size: (26px / $font-size-base) * 1em;
+          font-weight: bold;
+          &:hover {
+              background: none;
+              color: $link-hover-color;
+          }
+          &:focus{
+            background: none;
+          }
+        }
+        &.active a{
+          color: $color-red;
+        }
+      }
+      .submenu{
+        padding: 0 0 0 20px;
+        li{
+          list-style-type: none;
+          a{
+            display: block;
+            padding: 5px 0;
+            font-size: (18px / $font-size-base) * 1em;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}

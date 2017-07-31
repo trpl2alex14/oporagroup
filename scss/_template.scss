@@ -1,0 +1,78 @@
+//main: style.scss
+
+.wrapper{
+  background: $color-white;
+  position: relative;
+  z-index: 10;
+}
+
+.leftbox{
+  @include center-gradient($color-dark,90deg);
+  color: $color-white;
+}
+
+.sliderBg{
+  position: absolute;
+  display: none;
+  z-index: -2;
+  top: 80px;
+  height: 570px;
+  left: 0;
+  width: 100%;
+  background: #000000;
+}
+
+.breadcrumbBg{
+  position: absolute;
+  display: none;
+  z-index: -2;
+  top: 80px;
+  height: 120px;
+  left: 0;
+  width: 100%;
+  background: #d7dbdc;
+}
+
+.header{
+  height: 80px;
+}
+
+
+.actionbox{
+  background: $color-blue;
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: $color-red;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.aboutwrapper{
+  overflow: hidden;
+  .content{
+    overflow: visible;
+  }
+}
+
+.send{
+  border: 2px solid $color-red;
+  font-size: (20px / $font-size-base) * 1em;
+  color: $color-red;
+  background: url('/images/email.png') no-repeat;
+  background-size: 35px 25px;
+  background-position: 20px 8px;
+  padding: 10px 50px 12px 75px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  &:hover{
+    background-color: $color-red;
+    background-image: url('/images/email_h.png');
+    color: $color-white;
+  }
+}

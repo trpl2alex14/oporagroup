@@ -1,0 +1,38 @@
+//main:style.scss
+
+.content{
+  position: relative;
+  overflow: hidden;
+  .wrapp{
+    position: initial;
+    padding: 60px 15px 20px;
+    background: $color-white;
+  }
+  p:nth-child(2) {
+    margin-top: 60px;
+  }
+  h2{
+    position: absolute;
+    left: 0;
+    color: $color-white;
+    &:before{
+      content: '';
+      bottom: 0;
+      position: absolute;
+      width: 500px;
+      height: 1px;
+      border: 2px solid $color-dblue;
+    }
+  }
+  h3{
+    font-weight: bold;
+  }
+  h4{
+    font-weight: bold;
+    color: $color-dblue;
+  }
+  img {
+    float: left;
+    margin: 10px 15px;
+  }
+}

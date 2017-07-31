@@ -1,0 +1,28 @@
+//main: style.scss
+
+.news{
+  .title{
+    font-size:  (20px / $font-size-base) * 1em;
+    font-family: $font-title;
+    font-weight: bold;
+    color: $color-dark;
+    span{
+      color:$color-placeholder;
+      font-size: 0.7em;
+      display: block;
+    }
+  }
+  .intro{
+    padding: 10px;
+    margin: 10px 0 30px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  }
+  .allnews{
+    font-size: (24px / $font-size-base) * 1em;
+    text-align: center;
+    a{
+      border-bottom: 1px dotted;
+    }
+  }
+}

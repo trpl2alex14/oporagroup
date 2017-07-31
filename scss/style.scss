@@ -1,6 +1,8 @@
 // sourceMap: true, compileCompressed: ../css/style.min.css
 
+@import "mixins";
 @import "variables";
+<<<<<<< HEAD
 @import "mixins";
 @import "media";
 
@@ -82,3 +84,19 @@ footer{
   background: $color-dblue;
   color: $color-white;
 }
+=======
+@import "fonts";
+@import "default";
+@import "template";
+@import "header";
+@import "service";
+@import "action";
+@import "about";
+
+@import "content";
+@import "faq";
+@import "news";
+@import "footer";
+
+@import "media";
+>>>>>>> 6a83837e729f603285d33d9bed3b8aa95c02c772
